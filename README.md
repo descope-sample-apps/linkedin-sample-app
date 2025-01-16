@@ -1,7 +1,7 @@
 <img width="1400" alt="Descope Linkedin Banner" src="./linkedin_sample_app_banner.png">
 
 
-# Linkedin + Descope Next.js Sample App
+# LinkedIn + Descope Next.js Sample App
 
 This app showcases the power of using Descope to manage your provider tokens. :zap:
 
