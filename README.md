@@ -12,7 +12,7 @@ Follow these steps to clone the repository and start using the app.
 ### Prerequisites
 
 - An account on [Descope](https://descope.com/).
-- A [LinkedIn Developer Application](https://www.linkedin.com/developers/apps).
+- A [LinkedIn Provider Application](https://www.linkedin.com/developers/apps).
 
 ### LinkedIn Provider Application Setup
 
@@ -20,7 +20,7 @@ You will have to connect your own LinkedIn Provider Application in Descope to ma
 
 - First, if you do not already have one, create a LinkedIn Provider Application [here](https://www.linkedin.com/developers/apps).
 - Under the Products tab on your LinkedIn Provider Application, request access to "Share on LinkedIn" and "Sign In with LinkedIn using OpenID Connect".
-- Connect the application to Descope, by choosing Linkedin under the [Authentication Methods page](https://app.descope.com/settings/authentication/social) in the Descope Console. Choose "use my own account" and enter the Client ID and Client Secret found in the Auth tab on your Linkedin Provider Application. Under `scopes` add "w_member_social", and under `Advanced Settings` enable "Manage tokens from provider." 
+- Connect the application to Descope by choosing Linkedin under the [Authentication Methods page](https://app.descope.com/settings/authentication/social) in the Descope Console. Choose "use my own account" and enter your `Client ID` and `Client Secret` found under the Auth tab on your Linkedin Provider Application. Under `scopes` add "w_member_social", and under `Advanced Settings` enable "Manage tokens from provider." 
 
 <img alt="Descope Linkedin Setup" src="./linkedin_sample_app_provider_setup.png">
 
@@ -53,6 +53,7 @@ Before you run the app, make sure to configure the following:
 NEXT_PUBLIC_DESCOPE_PROJECT_ID="" // Descope Project ID
 NEXT_PUBLIC_DESCOPE_FLOW_ID="" // Descope flow to use on Sign In Page. Make sure the flow includes signing in using LinkedIn OAuth.
 DESCOPE_MANAGEMENT_KEY="" // Your Descope Management Key
+```
 
 ### Running the App
 
