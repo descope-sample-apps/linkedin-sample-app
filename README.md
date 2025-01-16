@@ -3,7 +3,7 @@
 
 # LinkedIn + Descope Next.js Sample App
 
-This app showcases the power of using Descope to manage your provider tokens. :zap:
+This app showcases the power of using Descope to manage your provider tokens. :zap: Use Descope to log in using LinkedIn OAuth, and utilize the LinkedIn provider token and APIs to create a new LinkedIn post.
 
 ## Getting Started 🚀
 
