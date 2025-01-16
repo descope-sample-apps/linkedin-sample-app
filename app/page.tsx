@@ -19,8 +19,6 @@ export default function Home() {
   const onLogout = useCallback(() => {
     logout();
   }, [logout]);
-
-  const [apiFormResult, setApiFormResult] = useState<string>("");
   const [postText, setPostText] = useState<string>(""); // State to hold the post content
 
   const handleSubmit = async (event: SyntheticEvent) => {
@@ -28,7 +26,7 @@ export default function Home() {
 
     const url = new URL("/api/getPost", window.location.origin);
     const requestBody = {
-      user: { id: user.loginIds[0], name: user.name, email: user.email },
+      user: { id: user.loginIds[0]},
       postText: postText,
     };
 

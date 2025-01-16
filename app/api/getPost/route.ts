@@ -29,7 +29,7 @@ export async function POST(request: Request) {
 
   // Define the content of the post
   const postData = {
-    author: `urn:li:person:${providerToken?.providerUserId}`, // Replace with the LinkedIn user ID
+    author: `urn:li:person:${providerToken?.providerUserId}`,
     lifecycleState: "PUBLISHED",
     specificContent: {
       "com.linkedin.ugc.ShareContent": {
@@ -59,7 +59,7 @@ export async function POST(request: Request) {
     });
   } catch (error) {
     return new Response(JSON.stringify({ data: "Posting Failed" }), {
-       status: 401, // Use the response status or default to 401
+       status: 401,
     });
   }
 }
